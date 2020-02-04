@@ -1,0 +1,55 @@
+body{
+	color: #3b434c;
+	font-family: 'Open Sans', sans-serif;
+}
+.team{}
+.heading{}
+.heading h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.heading span{
+    color: #f7600e;
+}
+.heading p{
+    font-size: 16px;
+    padding: 0px 300px;
+    margin-bottom: 50px;
+}
+.team_member{}
+.img{
+	position: relative;
+}
+.team_member .img::after{
+	content: "";
+    position: absolute;
+    border: 2px solid #f7600e;
+    width: 0%;
+    bottom: 0;
+    left: 13px;
+    border-radius: 10px;
+    opacity: 0;
+}
+.team_member:hover{
+	background-position: center;
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: all 0.5s ease;
+}
+.team_member:hover .img::after{
+	width: 90%;
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+.team_member:hover .team_caption h3{
+	color: #f7600e;
+	transition: all 0.5s ease;
+}
+.team_caption h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.team_caption p{
+    font-size: 14px;
+}
